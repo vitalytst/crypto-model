@@ -5,7 +5,7 @@ import prediction
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/futures/closeprice')
 def hello_world():
     # Получаем значения параметров
     symbol = request.args.get('symbol')
